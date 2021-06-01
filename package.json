@@ -1,5 +1,5 @@
 {
-  "name": "creatively",
+  "name": "rock-paper-scissors",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "test": "npm-run-all test:*",
     "test:html": "html-validate *.html",
-    "test:js": "eslint main.js",
+    "test:js": "eslint --fix main.js",
     "build": "npm-run-all build:* test",
     "build:sass": "node-sass --output-style expanded --source-map true style.scss style.css",
     "build:autoprefixer": "postcss style.css --use autoprefixer -d ./",
